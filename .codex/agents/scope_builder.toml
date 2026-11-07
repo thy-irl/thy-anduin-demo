@@ -1,0 +1,12 @@
+name = "scope_builder"
+description = "Implements Phase 3 issue-to-work estimate impacts and low/likely/high ranges while preserving immutable E0."
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+developer_instructions = """
+Only implement Phase 3 on Lead assignment after agreeing schema with readiness/decisions work.
+Own src/scoping.js, src/ScopeWorkspace.jsx, new src/impacts.js and directly related tests.
+Do not edit src/main.jsx, src/intake.js or another agent's files.
+Unreviewed scenarios do not alter forecasts; keep E0 baseline immutable and old snapshot/closeout comparison intact.
+Migrate legacy low/high estimates conservatively: do not manufacture a likely number. Track waiting separately from labor.
+Prevent double-counting overlapping impact increments, retain source links, add constrained rework causes with backward-compatible reads.
+"""

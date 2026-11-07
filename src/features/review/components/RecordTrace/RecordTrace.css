@@ -1,0 +1,47 @@
+.record-trace {
+  margin: 12px 0 18px;
+  border: 1px solid var(--line);
+  padding: 0 12px;
+  border-radius: 6px;
+  background: #f7faf7;
+  font-size: 13px;
+}
+.record-trace > div {
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+.record-trace article {
+  padding: 8px 0;
+}
+.record-trace p {
+  margin: 8px 0;
+}
+.record-trace small {
+  display: block;
+}
+.record-trace blockquote {
+  max-height: 190px;
+  overflow: auto;
+}
+.trace-source .text-button {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.trace-meta {
+  color: var(--muted);
+  font-size: 12px;
+}
+.record-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  .record-trace {
+    padding: 0 8px;
+  }
+  .record-trace blockquote {
+    padding: 8px;
+  }
+}

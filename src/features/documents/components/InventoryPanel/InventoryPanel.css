@@ -1,0 +1,40 @@
+.inventory-panel .reference-overview {
+  margin: 8px 0 20px;
+  color: var(--muted);
+  max-width: 68ch;
+}
+.inventory-panel .reference-group,
+.inventory-panel .reference-support,
+.inventory-panel .reference-entry {
+  border-top: 1px solid var(--line);
+  border-bottom: 0;
+}
+.inventory-panel .reference-group > summary,
+.inventory-panel .reference-support > summary,
+.inventory-panel .reference-entry > summary {
+  padding: 16px 0;
+  overflow-wrap: anywhere;
+}
+.inventory-panel .reference-entry > summary strong {
+  font-weight: 600;
+}
+.inventory-panel .reference-status {
+  color: var(--muted);
+}
+.inventory-panel .reference-group > .reference-entry,
+.inventory-panel .reference-support > details {
+  margin-left: 20px;
+}
+.inventory-panel .reference-entry > .button {
+  margin: 4px 0 12px;
+}
+.inventory-panel .reference-support {
+  margin-top: 12px;
+}
+.inventory-panel .reference-support > summary {
+  color: var(--muted);
+}
+
+.inventory-panel .reference-mentions {
+  border-bottom: 0;
+}

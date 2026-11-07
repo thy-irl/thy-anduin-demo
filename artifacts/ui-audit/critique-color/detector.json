@@ -1,0 +1,2191 @@
+[
+  {
+    "antipattern": "side-tab",
+    "name": "Side-tab accent border",
+    "description": "Thick colored border on one side of a card — the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 7,
+    "snippet": "border-left:3px solid var(--green)",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "border-accent-on-rounded",
+    "name": "Border accent on rounded element",
+    "description": "Thick accent border on a rounded card — the border clashes with the rounded corners. Remove the border or the border-radius.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "border-bottom:3px solid",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "overused-font",
+    "name": "Overused font",
+    "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-family:Inter",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #253b34 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#253b34",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #245b4c is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#245b4c",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #596b63 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#596b63",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #498b74 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#498b74",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #bac8c0 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#bac8c0",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #b9cbbf is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#b9cbbf",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #bdcbc3 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#bdcbc3",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #41574c is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#41574c",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #943c31 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#943c31",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #7c570d is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#7c570d",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #fbf0d8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#fbf0d8",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #839c6d is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#839c6d",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #425f50 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#425f50",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #203b3820 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#203b3820",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #c9d4cc is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#c9d4cc",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #80570b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#80570b",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #597569 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#597569",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #735112 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#735112",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #e3c88e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e3c88e",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #953b2e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#953b2e",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #e6bcaf is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e6bcaf",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #8da996 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8da996",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #142e275c is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#142e275c",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #83a48d is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#83a48d",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #194a38 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#194a38",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #dfeae2 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#dfeae2",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #455b50 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#455b50",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #8eaa9a is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8eaa9a",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #dcecdf is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#dcecdf",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "Undocumented color #253c32 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#253c32",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "10px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 27px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "27px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 19px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "19px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 28px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "28px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 17px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "17px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 1,
+    "snippet": "font-size: 20px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "20px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 3,
+    "snippet": "font-size: 25px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "25px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 3,
+    "snippet": "font-size: 23px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "23px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 3,
+    "snippet": "font-size: 11px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "11px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 3,
+    "snippet": "font-size: 22px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "22px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 6,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 7,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/App.css",
+    "line": 7,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 24,
+    "snippet": "Undocumented color #dedbd2 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#dedbd2",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 76,
+    "snippet": "Undocumented color #8b8b85 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8b8b85",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 166,
+    "snippet": "Undocumented color #cccec8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#cccec8",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 172,
+    "snippet": "Undocumented color #d9bba2 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#d9bba2",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 173,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 181,
+    "snippet": "Undocumented color #eeeee7 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#eeeee7",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 190,
+    "snippet": "Undocumented color #81531b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#81531b",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 227,
+    "snippet": "Undocumented color #e8e8e1 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e8e8e1",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 228,
+    "snippet": "Undocumented color #58615e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#58615e",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 242,
+    "snippet": "Undocumented color #e7e9e3 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e7e9e3",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 271,
+    "snippet": "Undocumented color #eaece6 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#eaece6",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 363,
+    "snippet": "Undocumented color #963e30 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#963e30",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 364,
+    "snippet": "Undocumented color #f9e7e0 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f9e7e0",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 367,
+    "snippet": "Undocumented color #80571e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#80571e",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 368,
+    "snippet": "Undocumented color #f5ecd7 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f5ecd7",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 415,
+    "snippet": "Undocumented color #9caca8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#9caca8",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 435,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 443,
+    "snippet": "Undocumented color #f3efdf is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f3efdf",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 444,
+    "snippet": "Undocumented color #373d35 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#373d35",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 484,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 495,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 504,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 508,
+    "snippet": "Undocumented color #18292e99 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#18292e99",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 528,
+    "snippet": "Undocumented color #e9eae3 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e9eae3",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 532,
+    "snippet": "Undocumented color #f5f5ef is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f5f5ef",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 536,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 541,
+    "snippet": "Undocumented color #6d9395 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#6d9395",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 574,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 881,
+    "snippet": "Undocumented color #225d46 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#225d46",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 882,
+    "snippet": "Undocumented color #e5efe7 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e5efe7",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 883,
+    "snippet": "Undocumented color #9cbda9 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#9cbda9",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 886,
+    "snippet": "Undocumented color #525e60 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#525e60",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 888,
+    "snippet": "Undocumented color #bbc5c0 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#bbc5c0",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 910,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 1078,
+    "snippet": "Undocumented color #80571e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#80571e",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 1086,
+    "snippet": "Undocumented color #f3efdf is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f3efdf",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/desk.css",
+    "line": 1661,
+    "snippet": "Undocumented color #f3efdf is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f3efdf",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "side-tab",
+    "name": "Side-tab accent border",
+    "description": "Thick colored border on one side of a card — the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 9,
+    "snippet": "border-left:3px solid var(--green)",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "border-accent-on-rounded",
+    "name": "Border accent on rounded element",
+    "description": "Thick accent border on a rounded card — the border clashes with the rounded corners. Remove the border or the border-radius.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 2,
+    "snippet": "border-bottom:3px solid",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 3,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 3,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 4,
+    "snippet": "font-size: 11px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "11px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 4,
+    "snippet": "font-size: 19px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "19px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 4,
+    "snippet": "font-size: 12px!important is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 7,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 17,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/app/workflow.css",
+    "line": 22,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "App.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #eaf0ec is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#eaf0ec"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #52665a is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#52665a"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #275b42 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#275b42"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #873f2d is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#873f2d"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #775820 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#775820"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #4e6357 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#4e6357"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #a5beb0 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#a5beb0"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #b5cabc is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#b5cabc"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "Undocumented color #8a392b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#8a392b"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "font-size: 21px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "21px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 1,
+    "snippet": "font-size: 11px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "11px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 5,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 20,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 22,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/context/components/ReviewContext/ReviewContext.css",
+    "line": 23,
+    "snippet": "border-radius: 4px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "4px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 1,
+    "snippet": "Undocumented color #f3f8ef is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#f3f8ef",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 1,
+    "snippet": "Undocumented color #bdd0af is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#bdd0af",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 1,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 1,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 1,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 5,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 5,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 8,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 9,
+    "snippet": "Undocumented color #7b9788 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#7b9788",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 9,
+    "snippet": "font-size: 11px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "11px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 10,
+    "snippet": "Undocumented color #163e32 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#163e32",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 10,
+    "snippet": "Undocumented color #315b4e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#315b4e",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 10,
+    "snippet": "Undocumented color #0003 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#0003",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/learning/learning.css",
+    "line": 10,
+    "snippet": "border-radius: 6px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "6px",
+    "importedBy": [
+      "Explain.jsx",
+      "GuidedExample.jsx",
+      "RecordTrace.jsx",
+      "ScreenIntro.jsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 20,
+    "snippet": "border-radius: 20px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "20px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 22,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 52,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 54,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 86,
+    "snippet": "font-size: 11px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "11px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 91,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 105,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 121,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "advisory": true,
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 127,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 132,
+    "snippet": "font-size: 12px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "12px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 143,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 161,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 190,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 195,
+    "snippet": "font-size: 17px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "17px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 199,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 231,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 243,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/readiness/components/ReadinessPanel/ReadinessPanel.css",
+    "line": 267,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "13px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/review/pdf.js",
+    "line": 220,
+    "snippet": "Undocumented color #202a2c is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#202a2c"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/review/pdf.js",
+    "line": 222,
+    "snippet": "Undocumented color #234e58 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#234e58"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/review/pdf.js",
+    "line": 225,
+    "snippet": "Undocumented color #33433f is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#33433f"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/teawin/anduin/preflight/src/features/review/pdf.js",
+    "line": 231,
+    "snippet": "Undocumented color #485451 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#485451"
+  }
+]

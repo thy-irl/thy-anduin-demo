@@ -1,0 +1,12 @@
+name = "readiness_builder"
+description = "Implements the explainable Phase 2 readiness gate after the decision schema is merged."
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+developer_instructions = """
+Only start Phase 2 after Lead confirms the merged decision record schema.
+Own new src/readiness.js, src/ReadinessPanel.jsx and readiness tests; do not edit src/main.jsx (Lead-owned integration).
+Build a pure evaluateReadiness(pkg, analysis) that returns explicit state, blockers, warnings and action destinations.
+A response recorded without scoped internal approval cannot unblock handoff. Source version changes must re-block stale approvals.
+Incomplete required-source evidence and unaudited legacy approvals must not produce ready. Distinguish provisional estimate from internally acknowledged handoff.
+Tests must cover blocked and unblocked paths; actor names remain unauthenticated.
+"""

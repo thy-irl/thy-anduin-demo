@@ -1,0 +1,387 @@
+.readiness-panel {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+.readiness-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.readiness-heading h2 {
+  margin: 0 0 8px;
+}
+.readiness-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+.readiness-state {
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 12px;
+  white-space: nowrap;
+  background: var(--neutral-hover);
+  color: var(--muted);
+}
+.readiness-state-blocked {
+  background: var(--negative-bg);
+  color: var(--negative-ink);
+}
+.readiness-state-needs_review {
+  background: var(--warning-bg);
+  color: var(--warning-ink);
+}
+.readiness-state-ready {
+  background: var(--positive-bg);
+  color: var(--positive-ink);
+}
+.readiness-limits {
+  margin: 0;
+}
+.readiness-checks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 12px;
+}
+.readiness-checks > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+}
+.readiness-checks small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+}
+.readiness-blockers h3,
+.readiness-coverage h3,
+.readiness-record h3,
+.readiness-acknowledgement h3 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+.readiness-blocker {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+.readiness-blocker.blocking {
+  border-left-color: var(--line);
+}
+.readiness-blocker-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 14px;
+}
+.readiness-blocker-heading > span {
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.readiness-blocker p {
+  font-size: 13px;
+  line-height: 1.65;
+}
+.readiness-blocker > small {
+  color: var(--muted);
+}
+.readiness-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 14px 0 0;
+}
+.readiness-blocker details {
+  font-size: 12px;
+  margin-top: 14px;
+}
+.readiness-evidence blockquote {
+  white-space: pre-wrap;
+  max-height: 180px;
+  overflow: auto;
+  border-left: 2px solid var(--control-line);
+  margin: 10px 0;
+  padding-left: 12px;
+}
+.readiness-coverage,
+.readiness-record,
+.readiness-acknowledgement {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+.readiness-coverage p,
+.readiness-record p,
+.readiness-acknowledgement p {
+  font-size: 13px;
+  line-height: 1.65;
+}
+.readiness-coverage details,
+.readiness-record small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.readiness-form-fields {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0;
+}
+.readiness-form-fields label {
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.readiness-form-fields input,
+.readiness-form-fields textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid var(--control-line);
+  border-radius: 7px;
+  background: #fff;
+  padding: 10px;
+  font: inherit;
+}
+.readiness-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 14px 0 18px;
+}
+.readiness-consent input {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+.readiness-acknowledgement button {
+  white-space: normal;
+}
+@media (max-width: 600px) {
+  .readiness-heading {
+    flex-direction: column;
+  }
+  .readiness-blocker-heading {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .readiness-checks {
+    grid-template-columns: 1fr;
+  }
+  .readiness-coverage,
+  .readiness-record,
+  .readiness-acknowledgement {
+    padding: 16px;
+  }
+}
+.readiness-boundary {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+.readiness-blocker-heading h3 {
+  font-size: 17px;
+  margin: 4px 0 0;
+}
+.readiness-blocker-heading small {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.readiness-next {
+  background: #fff;
+  border-left-color: var(--green);
+}
+.readiness-blocker > p {
+  max-width: 740px;
+  margin: 10px 0;
+}
+.readiness-check-overview {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 18px;
+}
+.readiness-check-overview .readiness-checks {
+  padding-bottom: 18px;
+}
+.readiness-coverage {
+  padding: 0 18px;
+}
+.readiness-coverage summary {
+  font-weight: 550;
+  font-size: 14px;
+}
+.readiness-requirements {
+  border-top: 1px solid var(--line);
+  padding-top: 2px;
+}
+.readiness-requirements li {
+  font-size: 13px;
+  margin: 8px 0;
+}
+.readiness-requirements [data-readiness-detail] + [data-readiness-detail] {
+  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 10px;
+}
+.readiness-acknowledgement > button {
+  margin-top: 16px;
+}
+.readiness-acknowledgement details {
+  font-size: 13px;
+}
+.readiness-acknowledgement > p {
+  margin: 6px 0;
+}
+.readiness-panel {
+  gap: 18px;
+}
+.readiness-deliverable {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.readiness-deliverable h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.readiness-deliverable p {
+  max-width: 70ch;
+  margin: 6px 0;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.readiness-deliverable p + p {
+  color: var(--muted);
+}
+.readiness-deliverable .button {
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .readiness-deliverable {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .readiness-deliverable .button {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+/* Show calculated progress before the work list and downloads. */
+.readiness-panel .readiness-check-overview {
+  padding: 20px;
+}
+.readiness-progress-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.readiness-progress-heading h3 {
+  font-size: var(--type-subtitle);
+  margin: 0;
+}
+.readiness-progress-heading strong {
+  color: var(--muted);
+  font-size: var(--type-label);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.readiness-progress {
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 0;
+  appearance: none;
+  background: var(--neutral-selected);
+  accent-color: var(--positive-ink);
+}
+.readiness-progress::-webkit-progress-bar {
+  background: var(--neutral-selected);
+}
+.readiness-progress::-webkit-progress-value {
+  background: var(--positive-ink);
+}
+.readiness-progress::-moz-progress-bar {
+  background: var(--positive-ink);
+}
+.readiness-panel .readiness-checks {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding-bottom: 0;
+}
+.readiness-panel .readiness-checks > div {
+  padding: 12px;
+  gap: 8px;
+}
+.readiness-checks svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--muted);
+}
+.readiness-checks [data-passed='true'] svg {
+  color: var(--positive-ink);
+}
+.readiness-panel .button.readiness-confirm {
+  min-height: 48px;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 1px solid var(--acknowledgement);
+  background: var(--acknowledgement);
+  color: var(--acknowledgement-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+.readiness-panel .button.readiness-confirm:enabled:hover {
+  background: var(--acknowledgement-hover);
+  border-color: var(--acknowledgement-hover);
+}
+.readiness-panel .button.readiness-confirm:disabled {
+  opacity: 1;
+  background: var(--acknowledgement-disabled-bg);
+  border-color: var(--acknowledgement-disabled-border);
+  color: var(--acknowledgement-disabled-ink);
+}
+@media (max-width: 1100px) {
+  .readiness-panel .readiness-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .readiness-panel .readiness-check-overview {
+    padding: 16px;
+  }
+  .readiness-panel .readiness-checks {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .readiness-progress-heading {
+    align-items: flex-start;
+  }
+  .readiness-panel .button.readiness-confirm {
+    width: 100%;
+    text-align: left;
+  }
+  .readiness-confirm > svg {
+    flex-shrink: 0;
+  }
+}

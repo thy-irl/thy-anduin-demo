@@ -1,0 +1,7 @@
+# Main orchestrator model
+model = "gpt-6.1-sol"
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 4
+default_subagent_model = "gpt-6-luna"

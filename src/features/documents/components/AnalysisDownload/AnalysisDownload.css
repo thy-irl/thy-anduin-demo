@@ -1,0 +1,42 @@
+.analysis-export {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.analysis-export-copy {
+  min-width: 0;
+}
+
+.analysis-export h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.analysis-export p {
+  max-width: 68ch;
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.analysis-export > .button {
+  flex-shrink: 0;
+  min-height: 44px;
+}
+
+@media (max-width: 760px) {
+  .analysis-export {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+}

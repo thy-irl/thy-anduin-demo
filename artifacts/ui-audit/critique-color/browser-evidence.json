@@ -1,0 +1,27 @@
+{
+  "logs": [
+    "%c[impeccable] 15 anti-patterns found color: oklch(84% 0.19 80.46); font-weight: bold"
+  ],
+  "styles": {
+    ".button.primary": {
+      "color": "rgb(24, 90, 189)",
+      "background": "rgb(255, 255, 255)",
+      "border": "rgb(54, 134, 255)"
+    },
+    ".text-button": {
+      "color": "rgb(24, 90, 189)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(24, 90, 189)"
+    },
+    ".workflow-tabs > button.active": {
+      "color": "rgb(23, 79, 157)",
+      "background": "rgb(216, 230, 250)",
+      "border": "rgba(0, 0, 0, 0)"
+    },
+    ".package-summary > div:nth-child(2)": {
+      "color": "rgb(34, 34, 34)",
+      "background": "rgb(238, 238, 231)",
+      "border": "rgb(220, 223, 228)"
+    }
+  }
+}

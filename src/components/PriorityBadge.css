@@ -1,0 +1,22 @@
+.priority-badge {
+  cursor: help;
+}
+.priority-badge:focus-visible {
+  outline: 2px solid var(--focus, #185abd);
+  outline-offset: 3px;
+}
+.priority-tooltip {
+  position: fixed;
+  z-index: 2000;
+  width: max-content;
+  max-width: min(260px, calc(100vw - 24px));
+  padding: 10px 12px;
+  border-radius: 5px;
+  background: #222222;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  white-space: normal;
+}

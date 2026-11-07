@@ -1,0 +1,297 @@
+/* Supplied palette, mapped to workflow roles. Darker inks preserve text contrast. */
+:root {
+  --palette-blue: #3686ff;
+  --palette-orange: #fda050;
+  --palette-gray: #808080;
+  --palette-black: #222222;
+  --palette-white: #ffffff;
+  --palette-tropical: #d8e6fa;
+  --brand: var(--palette-blue);
+  --action-bg: var(--palette-white);
+  --action-hover-bg: #edf4ff;
+  --text-selection-bg: var(--palette-tropical);
+  --support-bg: #f1f3f6;
+  --source-well: #f1f3f6;
+  --source-selector-bg: #f8f9fb;
+  --evidence-bg: #fff7ec;
+  --acknowledgement: var(--palette-orange);
+  --acknowledgement-hover: #f3913b;
+  --acknowledgement-ink: var(--palette-black);
+  --acknowledgement-disabled-bg: #f1f3f6;
+  --acknowledgement-disabled-ink: #555555;
+  --acknowledgement-disabled-border: #808080;
+  --action: var(--palette-blue);
+  --action-hover: #185abd;
+  --on-action: #185abd;
+  --link: #185abd;
+  --selection-ink: #174f9d;
+  --selection-bg: #edf4ff;
+  --selection-hover: #e5efff;
+  --focus: #185abd;
+  --info-ink: #414650;
+  --info-bg: var(--support-bg);
+  --positive-ink: #087b30;
+  --positive-bg: #e8f7ed;
+  --warning-ink: #8a480e;
+  --warning-bg: #fff0df;
+  --note-ink: #805b00;
+  --note-bg: #fff4c2;
+  --negative-ink: #b51f2c;
+  --negative-bg: #fff0f1;
+  --ink: var(--palette-black);
+  --muted: #555555;
+  --canvas: #f5f6f8;
+  --surface: var(--palette-white);
+  --line: #dcdfe4;
+  --control-line: var(--palette-gray);
+  --button-line: #c5cad2;
+  --neutral-hover: #edf0f4;
+  --neutral-selected: #e6e9ee;
+  /* Compatibility for older declarations; new rules use the named role. */
+  --green: var(--action);
+}
+::selection {
+  color: var(--ink);
+  background: var(--text-selection-bg);
+}
+* {
+  scrollbar-color: var(--palette-gray) transparent;
+}
+input,
+textarea {
+  caret-color: var(--action);
+}
+input[type='checkbox'] {
+  accent-color: var(--focus);
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline-color: var(--focus);
+}
+input,
+textarea,
+select,
+.search-wrap {
+  border-color: var(--control-line);
+}
+.button {
+  color: var(--ink);
+  border-color: var(--button-line);
+}
+.button.primary {
+  min-height: 44px;
+  background: var(--action-bg);
+  border: 2px solid var(--action);
+  padding: 9px 13px;
+  color: var(--on-action);
+  font-weight: 700;
+}
+.button.primary:enabled:hover {
+  background: var(--action-hover-bg);
+  border-color: var(--action-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.button:enabled:hover {
+  background: var(--neutral-hover);
+}
+.text-button {
+  color: var(--ink);
+}
+a.text-button {
+  color: var(--link);
+}
+/* Global package creation stays available without competing with the current task. */
+.app-header .button.primary {
+  color: var(--ink);
+  border-color: var(--button-line);
+}
+.app-header .button.primary:enabled:hover {
+  background: var(--neutral-hover);
+  border-color: var(--control-line);
+}
+.package-summary > div:nth-child(2) {
+  background: var(--support-bg);
+}
+.brand .brand-mark {
+  background: var(--brand);
+}
+.brand small,
+.row-arrow {
+  color: var(--muted);
+}
+.package-tabs > button.active {
+  color: var(--selection-ink);
+  border-color: var(--selection-ink);
+}
+.workflow-tabs > button.active {
+  color: var(--selection-ink);
+  background: var(--selection-bg);
+  border-color: transparent;
+}
+.workflow-tabs > button.active > span {
+  color: var(--selection-ink);
+  background: var(--surface);
+}
+.workflow-tabs > button:enabled:hover {
+  background: var(--neutral-hover);
+}
+.workflow-tabs > button.active:enabled:hover {
+  background: var(--selection-hover);
+}
+.workflow-tabs > button > span,
+.package-tabs span,
+.count {
+  background: var(--neutral-selected);
+  color: var(--muted);
+}
+.queue-toolbar {
+  background: var(--support-bg);
+}
+.finding-row:enabled:hover,
+.document-row:enabled:hover {
+  background: var(--support-bg);
+}
+.badge.blocking,
+.readiness-state-blocked {
+  color: var(--negative-ink);
+  background: var(--negative-bg);
+}
+.badge.review,
+.readiness-state-needs_review {
+  color: var(--warning-ink);
+  background: var(--warning-bg);
+}
+.badge.advisory {
+  color: var(--note-ink);
+  background: var(--note-bg);
+}
+.readiness-state-ready {
+  color: var(--positive-ink);
+  background: var(--positive-bg);
+}
+.intake-saved,
+.intake-status.current,
+.intake-status.ready {
+  color: var(--positive-ink);
+}
+.intake-status.current,
+.intake-status.ready {
+  background: var(--positive-bg);
+}
+.intake-status.stale,
+.intake-status.blocked {
+  color: var(--negative-ink);
+  background: var(--negative-bg);
+}
+.intake-status.missing,
+.intake-status.unverified,
+.intake-status.needs-review {
+  color: var(--warning-ink);
+  background: var(--warning-bg);
+}
+.intake-status.done,
+.intake-count {
+  color: var(--muted);
+  background: var(--neutral-selected);
+}
+.intake-section > summary > svg,
+.modal-symbol {
+  color: var(--muted);
+}
+.intake-editor {
+  background: var(--support-bg);
+  border-color: var(--control-line);
+}
+.intake-empty {
+  background: var(--support-bg);
+}
+.decision-steps button[aria-current='step'],
+.questions-workspace .decision-steps button[aria-current='step'] {
+  color: var(--selection-ink);
+  background: var(--selection-bg);
+  border-color: var(--selection-ink);
+}
+.review-help > strong {
+  color: var(--ink);
+}
+.review-source {
+  background: var(--source-well);
+}
+.document-modal-body {
+  background: var(--support-bg);
+}
+.source-selector {
+  background: var(--source-selector-bg);
+}
+.source-selector > button.active {
+  background: var(--selection-bg);
+  border-color: var(--selection-ink);
+  color: var(--selection-ink);
+  border-width: 2px;
+}
+.view-toggle button.active {
+  color: var(--ink);
+  background: var(--neutral-selected);
+}
+.drop-zone {
+  background: var(--source-selector-bg);
+  border-color: var(--control-line);
+}
+.drop-zone.dragging {
+  background: var(--info-bg);
+  border-color: var(--action);
+}
+.toast {
+  background: var(--palette-black);
+}
+.package-summary[data-readiness='READY'] > div:first-child > .text-button {
+  color: var(--positive-ink);
+  background: var(--positive-bg);
+  border-color: var(--positive-ink);
+}
+.package-summary[data-readiness='BLOCKED'] > div:first-child > .text-button {
+  color: var(--negative-ink);
+  background: var(--negative-bg);
+}
+/* Backdrops and supporting panels remain neutral rather than implying success. */
+.overlay,
+.review-overlay {
+  background: #22222270;
+}
+.record-trace,
+.finding-work-context {
+  background: var(--support-bg);
+}
+.badge {
+  color: var(--muted);
+  background: var(--neutral-selected);
+}
+.badge.blocking {
+  color: var(--negative-ink);
+  background: var(--negative-bg);
+}
+.badge.review {
+  color: var(--warning-ink);
+  background: var(--warning-bg);
+}
+.badge.advisory {
+  color: var(--note-ink);
+  background: var(--note-bg);
+}
+
+/* Evidence retains a quiet warm tint, distinct from interactive blue selection. */
+blockquote,
+.questions-workspace .decision-citation blockquote {
+  background: var(--evidence-bg);
+}
+
+/* A manual resolved label remains distinct from current internal approval. */
+.finding-row .finding-status.status-closed[data-finding-status='resolved'] {
+  color: var(--selection-ink);
+  background: var(--selection-bg);
+}

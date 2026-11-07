@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T05:25:24.954188+00:00",
+  "title": "Design System: Preflight",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Paper Action Surface"
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Deep Paper Action Surface"
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm Canvas"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Paper Surface"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Slate Ink"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate Metadata"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Quiet Divider"
+      },
+      "control-line": {
+        "role": "neutral",
+        "displayName": "Control Border"
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Charcoal Focus"
+      },
+      "navigation-active": {
+        "role": "secondary",
+        "displayName": "Warm Gray Selection"
+      },
+      "evidence": {
+        "role": "neutral",
+        "displayName": "Evidence Paper"
+      },
+      "blocking": {
+        "role": "neutral",
+        "displayName": "Blocking Ink"
+      },
+      "blocking-bg": {
+        "role": "neutral",
+        "displayName": "Blocking Surface"
+      },
+      "review": {
+        "role": "neutral",
+        "displayName": "Review Ink"
+      },
+      "review-bg": {
+        "role": "neutral",
+        "displayName": "Review Surface"
+      },
+      "advisory": {
+        "role": "neutral",
+        "displayName": "Advisory Ink"
+      },
+      "advisory-bg": {
+        "role": "neutral",
+        "displayName": "Advisory Surface"
+      },
+      "on-primary": {
+        "role": "primary",
+        "displayName": "White Action Text"
+      },
+      "selection-ink": {
+        "role": "secondary",
+        "displayName": "Neutral Selection Text"
+      },
+      "selection-hover": {
+        "role": "secondary",
+        "displayName": "Neutral Selection Hover"
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Neutral Text Action"
+      },
+      "brand": {
+        "role": "secondary",
+        "displayName": "Charcoal Brand Mark"
+      },
+      "info-ink": {
+        "role": "neutral",
+        "displayName": "Information Ink"
+      },
+      "info-bg": {
+        "role": "neutral",
+        "displayName": "Information Surface"
+      },
+      "positive-ink": {
+        "role": "neutral",
+        "displayName": "Positive Green Ink"
+      },
+      "positive-bg": {
+        "role": "neutral",
+        "displayName": "Positive Green Surface"
+      },
+      "neutral-hover": {
+        "role": "neutral",
+        "displayName": "Slate Hover"
+      },
+      "neutral-selected": {
+        "role": "neutral",
+        "displayName": "Slate Selected Surface"
+      },
+      "text-selection-ink": {
+        "role": "secondary",
+        "displayName": "Text Selection Ink"
+      },
+      "text-selection-bg": {
+        "role": "secondary",
+        "displayName": "Text Selection Surface"
+      },
+      "navigation-count-bg": {
+        "role": "secondary",
+        "displayName": "Selected Navigation Count Surface"
+      },
+      "upload-bg": {
+        "role": "neutral",
+        "displayName": "Upload Surface"
+      },
+      "example-border": {
+        "role": "neutral",
+        "displayName": "Guided Example Border"
+      },
+      "toast-bg": {
+        "role": "neutral",
+        "displayName": "Neutral Toast"
+      },
+      "ready-border": {
+        "role": "neutral",
+        "displayName": "Ready State Border"
+      },
+      "overlay": {
+        "role": "neutral",
+        "displayName": "Neutral Overlay"
+      },
+      "support-bg": {
+        "role": "neutral",
+        "displayName": "Supporting Record Surface"
+      },
+      "source-well": {
+        "role": "surface",
+        "displayName": "Warm Gray Review Source Well"
+      },
+      "questions-control-line": {
+        "role": "neutral",
+        "displayName": "Questions Control Border"
+      },
+      "questions-required-ink": {
+        "role": "neutral",
+        "displayName": "Required Label Ink"
+      },
+      "questions-required-bg": {
+        "role": "neutral",
+        "displayName": "Required Label Surface"
+      },
+      "questions-required-outline": {
+        "role": "neutral",
+        "displayName": "Required Field Outline"
+      },
+      "questions-invalid-outline": {
+        "role": "neutral",
+        "displayName": "Invalid Field Outline"
+      },
+      "questions-required-surface": {
+        "role": "neutral",
+        "displayName": "Required Field Paper"
+      },
+      "questions-unanswered-ink": {
+        "role": "neutral",
+        "displayName": "Needs an Answer Ink"
+      },
+      "questions-answered-ink": {
+        "role": "neutral",
+        "displayName": "Answer Saved Ink"
+      },
+      "questions-approved-ink": {
+        "role": "neutral",
+        "displayName": "Internally Approved Ink"
+      },
+      "questions-approved-bg": {
+        "role": "neutral",
+        "displayName": "Internally Approved Surface"
+      },
+      "source-selector-bg": {
+        "role": "surface",
+        "displayName": "Warm White Source Selector"
+      },
+      "source-selected-outline": {
+        "role": "selection",
+        "displayName": "Graphite Source Selection"
+      },
+      "document-viewer-bg": {
+        "role": "surface",
+        "displayName": "Document Viewer Background"
+      },
+      "acknowledgement": {
+        "role": "action",
+        "displayName": "Bronze Final Acknowledgement"
+      },
+      "acknowledgement-hover": {
+        "role": "action",
+        "displayName": "Bronze Acknowledgement Hover"
+      },
+      "acknowledgement-disabled-bg": {
+        "role": "surface",
+        "displayName": "Unavailable Acknowledgement Surface"
+      },
+      "acknowledgement-disabled-ink": {
+        "role": "text",
+        "displayName": "Unavailable Acknowledgement Text"
+      },
+      "acknowledgement-disabled-border": {
+        "role": "border",
+        "displayName": "Unavailable Acknowledgement Outline"
+      }
+    },
+    "typographyMeta": {
+      "evidence": {
+        "displayName": "Evidence",
+        "purpose": "Full quoted source passages."
+      },
+      "preview": {
+        "displayName": "Source preview",
+        "purpose": "Short queue quotations."
+      },
+      "metadata": {
+        "displayName": "Metadata",
+        "purpose": "Version, location and supporting facts. Minimum 14px at the default browser font size."
+      }
+    },
+    "shadows": [
+      {
+        "name": "review-dialog",
+        "value": "0 12px 60px #182d3d35",
+        "purpose": "Evidence review overlay."
+      },
+      {
+        "name": "modal",
+        "value": "0 14px 50px #112c3430",
+        "purpose": "Standard modal overlay."
+      },
+      {
+        "name": "original-page",
+        "value": "0 1px 5px #273e3820",
+        "purpose": "Original document canvas."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-background",
+        "value": "background-color 150ms ease-out",
+        "purpose": "Enabled for buttons, finding rows and workflow navigation only under prefers-reduced-motion: no-preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-workflow",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "description": "Primary action with a neutral outline and bold text.",
+      "html": "<button class=\"ds-primary\">Record response</button>",
+      "css": ".ds-primary{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;font-weight:700;min-height:44px;padding:9px 13px;background:#fffefa;color:#262626;border:2px solid #343434;border-radius:5px;cursor:pointer}.ds-primary:hover{background:#efeee9;text-decoration:underline;text-underline-offset:3px}.ds-primary:focus-visible{outline:3px solid #525252;outline-offset:3px}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "description": "Secondary button from the implemented review desk.",
+      "html": "<button class=\"ds-secondary\">Previous</button>",
+      "css": ".ds-secondary{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;font-weight:600;min-height:42px;padding:10px 14px;background:var(--surface,#fffefa);color:var(--ink,#262626);border:1px solid #8b8b85;border-radius:5px;cursor:pointer}.ds-secondary:hover{background:#efeee9}.ds-secondary:focus-visible{outline:3px solid #525252;outline-offset:3px}",
+      "refersTo": "button-secondary"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "description": "Text action from the implemented review desk.",
+      "html": "<button class=\"ds-text\">View source</button>",
+      "css": ".ds-text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;font-weight:550;min-height:36px;padding:8px 0;background:transparent;border:0;color:var(--link,#262626);cursor:pointer}.ds-text:hover{text-decoration:underline;text-underline-offset:4px}.ds-text:focus-visible{outline:3px solid #525252;outline-offset:3px}"
+    },
+    {
+      "name": "Labeled input",
+      "kind": "input",
+      "description": "Labeled input from the implemented review desk.",
+      "html": "<label class=\"ds-field\">Response author<input placeholder=\"Enter name\"></label>",
+      "css": ".ds-field{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;flex-direction:column;gap:8px;font-size:16px;font-weight:600;color:var(--ink,#262626)}.ds-field input{font:400 15px -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;min-height:42px;padding:0 10px;border:1px solid #8b8b85;border-radius:5px;background:white;color:var(--ink,#262626);caret-color:var(--action,#fffefa)}.ds-field input:focus-visible{outline:3px solid #525252;outline-offset:3px}"
+    },
+    {
+      "name": "Workflow navigation",
+      "kind": "nav",
+      "description": "Workflow navigation from the implemented review desk.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workflow\"><button>Documents <span>3</span></button><button aria-current=\"page\">Review <span>4</span></button><button>Questions <span>2</span></button><button>Readiness</button></nav>",
+      "css": ".ds-nav{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;flex-direction:column;gap:6px;width:174px}.ds-nav button{display:flex;align-items:center;gap:10px;min-height:46px;padding:11px 12px;border:0;border-radius:5px;background:transparent;color:#555555;font:400 13px -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;text-align:left;cursor:pointer}.ds-nav span{margin-left:auto;background:#e7e5df;color:#555555;min-width:22px;text-align:center;border-radius:4px;padding:2px 5px;font-size:14px}.ds-nav [aria-current]{background:#e9e7e1;color:#262626;font-weight:650}.ds-nav [aria-current] span{background:#fffefa;color:#262626}.ds-nav button:hover{background:#efeee9}.ds-nav [aria-current]:hover{background:#dedbd3}.ds-nav button:focus-visible{outline:3px solid #525252;outline-offset:3px}"
+    },
+    {
+      "name": "Severity badges",
+      "kind": "chip",
+      "description": "Severity badges from the implemented review desk.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-blocking\">Blocking</span><span class=\"ds-review\">Review</span><span class=\"ds-advisory\">Advisory</span></div>",
+      "css": ".ds-badges{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;gap:8px;flex-wrap:wrap}.ds-badges span{font-size:14px;font-weight:600;padding:4px 7px;border-radius:3px}.ds-blocking{color:#9b3538;background:#fbeaec}.ds-review{color:#805317;background:#fbf0d9}.ds-advisory{color:#41413d;background:#efefeb}"
+    },
+    {
+      "name": "Source panel",
+      "kind": "card",
+      "description": "Source panel from the implemented review desk.",
+      "html": "<section class=\"ds-panel\"><h2>Source documents</h2><p>Review original pages and coverage.</p></section>",
+      "css": ".ds-panel{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding:24px;border:1px solid var(--line,#deddd8);border-radius:7px;background:var(--surface,#fffefa);color:var(--ink,#262626)}.ds-panel h2{margin:0;font-size:20px;line-height:1.35;font-weight:650;letter-spacing:-.015em}.ds-panel p{margin:8px 0 0;font-size:16px;line-height:1.55;color:var(--muted,#555555)}"
+    },
+    {
+      "name": "Quoted evidence",
+      "kind": "custom",
+      "description": "Quoted evidence from the implemented review desk.",
+      "html": "<blockquote class=\"ds-evidence\">A source passage remains distinct from the reviewer\u2019s response.</blockquote>",
+      "css": ".ds-evidence{font-family:Georgia,\"Times New Roman\",serif;font-size:18px;line-height:1.8;background:#f3efdf;color:#373d35;border:0;padding:18px 20px;margin:12px 0;white-space:pre-wrap;overflow-wrap:anywhere}",
+      "refersTo": "evidence-block"
+    },
+    {
+      "name": "Readiness acknowledgement",
+      "kind": "button",
+      "description": "Distinct bronze final action. Disabled controls use pale sand and a lock icon; workflow prerequisites, required fields and consent still apply.",
+      "html": "<button class=\"ds-acknowledge\">Acknowledge internal readiness</button>",
+      "css": ".ds-acknowledge{min-height:48px;padding:12px 18px;background:#8b531b;color:#fff;border:1px solid #8b531b;border-radius:5px;font-weight:700}.ds-acknowledge:enabled:hover{background:#704013}.ds-acknowledge:disabled{opacity:1;background:#f2e8da;color:#75512b;border-color:#c6a987}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Review Desk",
+    "overview": "The review desk pairs warm paper surfaces with neutral outlined actions, neutral selections and slate text. Compact system typography carries controls and workflow states; serif passages distinguish source material from analyst actions. The visual hierarchy keeps evidence legible and decisions deliberate.\n\nThe system is primarily flat. Subtle tonal changes, thin dividers and modest corners group related work without turning each item into a floating card.",
+    "keyCharacteristics": [
+      "Warm paper surfaces and slate ink.",
+      "Compact controls with visible keyboard focus.",
+      "Serif evidence within a system sans interface.",
+      "Tonal grouping and restrained status color."
+    ],
+    "rules": [
+      {
+        "name": "The Written State Rule",
+        "body": "Pair every status color with an explicit text label.",
+        "section": "colors"
+      },
+      {
+        "name": "The Evidence Voice Rule",
+        "body": "Serif type distinguishes source passages from workflow instructions and analyst controls.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do reserve Georgia for quoted evidence and source text.",
+      "Do use thin dividers and tonal surfaces to group work.",
+      "Do keep keyboard focus clearly visible.",
+      "Do preserve readable source passages on small screens."
+    ],
+    "donts": [
+      "Don't apply serif styling to controls or navigation.",
+      "Don't use status color without a written label.",
+      "Don't create separate nested scrolling panes in the mobile evidence review."
+    ]
+  }
+}

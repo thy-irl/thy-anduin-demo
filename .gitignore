@@ -1,0 +1,18 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+
+# Generated local design verification captures
+.impeccable/review/
+
+# Local logs and environment overrides
+*.log
+.env
+.env.*
+!.env.example
+
+# Local tool caches and coverage output
+.vite/
+coverage/

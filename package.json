@@ -1,0 +1,28 @@
+{
+  "name": "anduin-preflight",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "format": "prettier --write \"src/**/*.{js,jsx}\" \"tests/**/*.{js,mjs}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx}\" \"tests/**/*.{js,mjs}\""
+  },
+  "dependencies": {
+    "jszip": "^3.10.2",
+    "lucide-react": "^0.468.0",
+    "mammoth": "^1.11.0",
+    "pdfjs-dist": "^6.2.108",
+    "pdfmake": "^0.3.13",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "prettier": "^3.9.10",
+    "vite": "^7.2.0"
+  }
+}

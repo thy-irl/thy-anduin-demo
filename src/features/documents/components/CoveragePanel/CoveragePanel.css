@@ -1,0 +1,70 @@
+.coverage-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coverage-heading h2 {
+  margin: 0;
+}
+
+.coverage-help-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: help;
+}
+
+.coverage-help-button:hover {
+  background: var(--neutral-hover);
+}
+
+.coverage-help-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  width: min(360px, calc(100vw - 72px));
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.coverage-help:not(.is-dismissed):hover .coverage-help-tooltip,
+.coverage-help:not(.is-dismissed):focus-within .coverage-help-tooltip,
+.coverage-help:not(.is-dismissed) .coverage-help-tooltip.is-open {
+  display: block;
+}
+
+.coverage-panel .coverage-help-tooltip p {
+  margin: 8px 0 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.coverage-panel .coverage-status-warning,
+.coverage-panel .coverage-warning-description {
+  color: #bd4550;
+}
+
+.coverage-panel .coverage-status-warning {
+  font-weight: 600;
+}
+
+.coverage-panel .coverage-tip {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}

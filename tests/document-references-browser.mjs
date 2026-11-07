@@ -10,7 +10,7 @@ try {
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto(process.env.PREFLIGHT_TEST_URL || 'http://127.0.0.1:5182');
-  await page.getByRole('button', { name: 'Packages', exact: true }).click();
+  await page.getByRole('button', { name: 'All packages', exact: true }).click();
   await page.getByRole('button', { name: /Willow Quay — Ready to hand off/ }).click();
   await page.getByRole('button', { name: /^Documents\s/ }).click();
   const panel = page.locator('.inventory-panel');
@@ -57,7 +57,7 @@ try {
   await page.getByRole('dialog').getByRole('button', { name: /Close/ }).first().click();
   const after = await page.evaluate(() => JSON.parse(localStorage.getItem('anduin-preflight-v1')));
   assert.deepEqual(after, saved, 'Inspecting sources and details must not change saved state');
-  await page.getByRole('button', { name: 'Packages', exact: true }).click();
+  await page.getByRole('button', { name: 'All packages', exact: true }).click();
   await page.getByRole('button', { name: /Cedar Harbor — Open findings/ }).click();
   await page.getByRole('button', { name: /^Documents\s/ }).click();
   const missing = panel

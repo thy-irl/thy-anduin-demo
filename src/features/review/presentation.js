@@ -38,7 +38,7 @@ export function findingReviewGuidance(f, operations = {}) {
     };
   return {
     title: f.severity === 'advisory' ? 'Manual review suggested' : 'Review this finding',
-    next: 'Compare the cited text with the original. Confirm the issue, or dismiss it with a reason. Findings are review candidates, not legal conclusions.',
+    next: 'Verify the source. Confirm the issue or dismiss it with a reason',
   };
 }
 

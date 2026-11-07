@@ -203,7 +203,7 @@ try {
       .click();
     await capture('declaration');
     await page.getByRole('button', { name: 'Cancel context edit', exact: true }).click();
-    await page.getByRole('button', { name: 'Packages', exact: true }).click();
+    await page.getByRole('button', { name: 'All packages', exact: true }).click();
     await capture('packages');
     assert.deepEqual(errors, []);
     await context.close();

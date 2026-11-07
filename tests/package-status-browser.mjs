@@ -100,7 +100,7 @@ try {
     );
     await page.screenshot({ path: `.impeccable/review/handoff-${width}.png`, fullPage: true });
     await page.screenshot({ path: `.impeccable/review/status-${width}.png`, fullPage: true });
-    await page.getByRole('button', { name: 'Packages', exact: true }).click();
+    await page.getByRole('button', { name: 'All packages', exact: true }).click();
     const card = page.getByRole('button', { name: /Synthetic ready package/ });
     await card.getByText('Ready for internal handoff', { exact: true }).waitFor();
     await page.screenshot({ path: `.impeccable/review/card-${width}.png`, fullPage: true });

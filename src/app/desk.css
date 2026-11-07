@@ -1730,7 +1730,15 @@ body {
 
 .browser-storage-hint {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: var(--type-label);
   cursor: help;
+}
+.browser-storage-hint > svg {
+  flex-shrink: 0;
 }
 .browser-storage-hint:focus-visible {
   outline: 2px solid var(--focus);

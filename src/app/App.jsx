@@ -10,6 +10,7 @@ import {
   CheckCheck,
   CircleCheck,
   CircleAlert,
+  CircleHelp,
   Download,
   FileText,
   FolderOpen,
@@ -93,7 +94,8 @@ function BrowserStorageHint() {
         if (event.key === 'Escape') setDismissed(true);
       }}
     >
-      Packages in this browser
+      <CircleHelp size={16} aria-hidden="true" />
+      How data is stored
       {open && (
         <span id="browser-storage-tooltip" role="tooltip" className="browser-storage-tooltip">
           Files and package data are stored locally in this browser profile on this device. Clearing
@@ -187,7 +189,7 @@ function useDialog(onClose, blocked = false) {
 }
 export default function App() {
   const [state, setState] = useState(loadState),
-    [nav, setNav] = useState('package'),
+    [nav, setNav] = useState('packages'),
     [tab, setTab] = useState('review'),
     [filter, setFilter] = useState('all'),
     [query, setQuery] = useState(''),
@@ -563,7 +565,7 @@ export default function App() {
               setSelectedId(null);
             }}
           >
-            Packages
+            All packages
           </button>
           <button className="button primary" onClick={() => setModal('new')}>
             <Plus size={16} />
@@ -587,7 +589,7 @@ export default function App() {
         {nav === 'packages' ? (
           <>
             <div className="page-title">
-              <h1>Packages</h1>
+              <h1>All packages</h1>
               {DEMO_PACKAGE_IDS.some((id) => !state.packages.some((p) => p.id === id)) ? (
                 <button className="button" onClick={() => setState((s) => addDemoPackages(s))}>
                   <Plus size={16} /> Add demo packages
@@ -603,7 +605,10 @@ export default function App() {
                 const c = cardAnalysis.coverage;
                 return (
                   <button className="package-card" key={p.id} onClick={() => selectPackage(p.id)}>
-                    <FolderOpen size={22} />
+                    <span className="package-card-label">
+                      <FolderOpen size={22} />
+                      {p.demo && <strong>Mock Sample</strong>}
+                    </span>
                     <h2>{p.name}</h2>
                     {DEMO_PACKAGE_IDS.includes(p.id) && <p>{p.description}</p>}
                     <p>
@@ -620,18 +625,19 @@ export default function App() {
                     >
                       {readinessLabels[cardReadiness.state]}
                     </span>
-                    <span
-                      className={
-                        c.status === 'incomplete' && cardReadiness.state !== 'READY'
-                          ? 'coverage-warning'
-                          : 'muted'
-                      }
-                    >
-                      {cardReadiness.state === 'READY' && c.status === 'incomplete'
-                        ? 'Coverage notes retained · manual review acknowledged'
-                        : coverageMessage(c)}
-                    </span>
-                    {p.demo && <small>Synthetic sample</small>}
+                    {!p.demo && (
+                      <span
+                        className={
+                          c.status === 'incomplete' && cardReadiness.state !== 'READY'
+                            ? 'coverage-warning'
+                            : 'muted'
+                        }
+                      >
+                        {cardReadiness.state === 'READY' && c.status === 'incomplete'
+                          ? 'Coverage notes retained · manual review acknowledged'
+                          : coverageMessage(c)}
+                      </span>
+                    )}
                   </button>
                 );
               })}
@@ -1827,6 +1833,14 @@ function HistoryModal({ activity, onClose }) {
     </div>
   );
 }
+const PEREGRINE_SAMPLES = [
+  { file: 'peregrine-ppm.pdf', title: 'Private placement memorandum', detail: '48 pages' },
+  { file: 'peregrine-individual.pdf', title: 'Individual subscription form', detail: '10 pages' },
+  { file: 'peregrine-entity.pdf', title: 'Entity subscription form', detail: '13 pages' },
+  { file: 'peregrine-aml.pdf', title: 'Due diligence & additional information', detail: '7 pages' },
+  { file: 'peregrine-agreement.pdf', title: 'Subscription agreement', detail: '17 pages' },
+];
+const sampleUrl = (file) => `${import.meta.env.BASE_URL}samples/peregrine/${file}`;
 function UploadModal({ isNew, packageName, onClose, onSubmit }) {
   const [name, setName] = useState(''),
     [files, setFiles] = useState([]),
@@ -1856,6 +1870,30 @@ function UploadModal({ isNew, packageName, onClose, onSubmit }) {
     }
     setFiles(merged);
   }
+  async function loadSamples() {
+    setBusy(true);
+    setError('');
+    setStep('Loading sample PDFs…');
+    try {
+      const samples = await Promise.all(
+        PEREGRINE_SAMPLES.map(async ({ file }) => {
+          const response = await fetch(sampleUrl(file));
+          if (!response.ok)
+            throw new Error(
+              'Sample PDFs could not be loaded. Try again or download them individually.',
+            );
+          return new File([await response.blob()], file, { type: 'application/pdf' });
+        }),
+      );
+      addFiles(samples);
+      if (!name.trim()) setName('Peregrine — Sample package');
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setBusy(false);
+      setStep('');
+    }
+  }
   async function submit(e) {
     e.preventDefault();
     if (!files.length || (isNew && !name.trim())) return;
@@ -1882,7 +1920,7 @@ function UploadModal({ isNew, packageName, onClose, onSubmit }) {
   return (
     <div className="overlay modal-overlay" onClick={() => !busy && onClose()}>
       <form
-        className="modal upload-modal"
+        className={`modal upload-modal ${isNew ? 'new-package-modal' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-label={isNew ? 'New document package' : 'Add documents'}
@@ -1907,94 +1945,126 @@ function UploadModal({ isNew, packageName, onClose, onSubmit }) {
           Next: inspect Documents coverage and original pages, then review findings. Automated
           checks do not read scanned image text or decide legal intent.
         </p>
-        {isNew && (
-          <label className="field-label">
-            Package name
-            <input
-              autoFocus
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Northstar Fund IV"
-              maxLength={100}
-              disabled={busy}
-            />
-          </label>
-        )}
-        <input
-          type="file"
-          className="sr-only"
-          ref={input}
-          multiple
-          accept=".pdf,.docx,.txt"
-          disabled={busy}
-          onChange={(e) => {
-            addFiles(e.target.files);
-            e.target.value = '';
-          }}
-        />
-        <button
-          type="button"
-          disabled={busy}
-          className={`drop-zone ${drag ? 'dragging' : ''}`}
-          onClick={() => input.current?.click()}
-          onDragOver={(e) => {
-            e.preventDefault();
-            if (!busy) setDrag(true);
-          }}
-          onDragLeave={() => setDrag(false)}
-          onDrop={(e) => {
-            e.preventDefault();
-            setDrag(false);
-            if (!busy) addFiles(e.dataTransfer.files);
-          }}
-        >
-          <span>
-            <Upload size={24} />
-          </span>
-          <strong>
-            Click to upload <span>or drag and drop</span>
-          </strong>
-          <small>PDF, DOCX, or TXT · Up to 25 MB each · 20 files</small>
-        </button>
-        {files.length > 0 && (
-          <div className="upload-file-list">
-            {files.map((f, i) => (
-              <div key={f.name}>
-                <FileText size={17} />
-                <span>
-                  {f.name}
-                  <small>{prettyBytes(f.size)}</small>
-                </span>
-                <IconButton
-                  label={`Remove ${f.name}`}
+        <div className="upload-layout">
+          <div className="upload-fields">
+            {isNew && (
+              <label className="field-label">
+                Package name
+                <input
+                  autoFocus
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="e.g. Northstar Fund IV"
+                  maxLength={100}
                   disabled={busy}
-                  onClick={() => setFiles(files.filter((_, j) => i !== j))}
-                >
-                  <X size={15} />
-                </IconButton>
+                />
+              </label>
+            )}
+            <input
+              type="file"
+              className="sr-only"
+              ref={input}
+              multiple
+              accept=".pdf,.docx,.txt"
+              disabled={busy}
+              onChange={(e) => {
+                addFiles(e.target.files);
+                e.target.value = '';
+              }}
+            />
+            <button
+              type="button"
+              disabled={busy}
+              className={`drop-zone ${drag ? 'dragging' : ''}`}
+              onClick={() => input.current?.click()}
+              onDragOver={(e) => {
+                e.preventDefault();
+                if (!busy) setDrag(true);
+              }}
+              onDragLeave={() => setDrag(false)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDrag(false);
+                if (!busy) addFiles(e.dataTransfer.files);
+              }}
+            >
+              <span>
+                <Upload size={24} />
+              </span>
+              <strong>
+                Click to upload <span>or drag and drop</span>
+              </strong>
+              <small>PDF, DOCX, or TXT · Up to 25 MB each · 20 files</small>
+            </button>
+            {files.length > 0 && (
+              <div className="upload-file-list">
+                {files.map((f, i) => (
+                  <div key={f.name}>
+                    <FileText size={17} />
+                    <span>
+                      {f.name}
+                      <small>{prettyBytes(f.size)}</small>
+                    </span>
+                    <IconButton
+                      label={`Remove ${f.name}`}
+                      disabled={busy}
+                      onClick={() => setFiles(files.filter((_, j) => i !== j))}
+                    >
+                      <X size={15} />
+                    </IconButton>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
+            {error && (
+              <div className="notice error" role="alert">
+                <CircleAlert size={17} />
+                <span>{error}</span>
+              </div>
+            )}
+            {busy && (
+              <div className="processing-status" role="status">
+                <LoaderCircle className="spin" size={16} />
+                {step}
+              </div>
+            )}
+            <div className="upload-privacy">
+              <ShieldCheck size={15} />
+              <span>
+                Your documents are processed in this browser. No files are sent to an external AI
+                service.
+              </span>
+            </div>
           </div>
-        )}
-        {error && (
-          <div className="notice error" role="alert">
-            <CircleAlert size={17} />
-            <span>{error}</span>
-          </div>
-        )}
-        {busy && (
-          <div className="processing-status" role="status">
-            <LoaderCircle className="spin" size={16} />
-            {step}
-          </div>
-        )}
-        <div className="upload-privacy">
-          <ShieldCheck size={15} />
-          <span>
-            Your documents are processed in this browser. No files are sent to an external AI
-            service.
-          </span>
+          {isNew && (
+            <aside className="upload-samples" aria-labelledby="upload-samples-title">
+              <h3 id="upload-samples-title">Try a sample package</h3>
+              <p>
+                Explore the upload flow with these five Peregrine PDFs, or download individual
+                examples to follow.
+              </p>
+              <button type="button" className="button" disabled={busy} onClick={loadSamples}>
+                <Plus size={16} /> Use all 5 samples
+              </button>
+              <ul className="sample-downloads">
+                {PEREGRINE_SAMPLES.map(({ file, title, detail }) => (
+                  <li key={file}>
+                    <FileText size={18} aria-hidden="true" />
+                    <a href={sampleUrl(file)} download={file}>
+                      <span>{title}</span>
+                      <small>PDF · {detail}</small>
+                      <Download size={16} aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="sample-footnote">
+                Individual and entity forms are both included for reference. Loading samples adds
+                them to your selected files.
+              </p>
+            </aside>
+          )}
         </div>
         <div className="modal-actions">
           <button type="button" className="button" onClick={onClose} disabled={busy}>

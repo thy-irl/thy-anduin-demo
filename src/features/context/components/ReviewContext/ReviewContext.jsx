@@ -1313,8 +1313,14 @@ function QuestionsQueue({
         <div>
           <h2>Questions</h2>
           <p>
-            Record answers to questions raised in Review, then check whether they need internal
-            approval.
+            {editor ? (
+              'Record the response, then review internal approval separately.'
+            ) : (
+              <>
+                Select <strong>Record answer</strong> to save a response. Internal approval is
+                recorded separately.
+              </>
+            )}
           </p>
         </div>
         {!editor && (
@@ -1333,10 +1339,6 @@ function QuestionsQueue({
         </>
       ) : (
         <>
-          <p className="questions-start">
-            Choose a question below and select <strong>Record answer</strong>. Nothing is sent from
-            this screen.
-          </p>
           <div className="questions-toolbar">
             <div className="questions-filters" role="group" aria-label="Filter questions">
               {filters.map(([key, label]) => (

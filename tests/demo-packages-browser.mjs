@@ -12,7 +12,7 @@ try {
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto(url);
   await page.getByRole('heading', { name: 'Cedar Harbor — Open findings', exact: true }).waitFor();
-  await page.getByRole('button', { name: 'Packages', exact: true }).click();
+  await page.getByRole('button', { name: 'All packages', exact: true }).click();
   await page
     .getByRole('heading', { name: 'Willow Quay — Ready to hand off', exact: true })
     .waitFor();
@@ -41,7 +41,7 @@ try {
     .getByRole('heading', { name: 'Willow Quay — Ready to hand off', exact: true })
     .waitFor();
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.getByRole('button', { name: 'Packages', exact: true }).click();
+  await page.getByRole('button', { name: 'All packages', exact: true }).click();
   await page.screenshot({ path: `${output}/packages-mobile.png`, fullPage: true });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
   await page.getByRole('button', { name: /Willow Quay — Ready to hand off/ }).click();
@@ -49,7 +49,7 @@ try {
   await page.screenshot({ path: `${output}/ready-mobile.png`, fullPage: true });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.getByRole('button', { name: 'Packages', exact: true }).click();
+  await page.getByRole('button', { name: 'All packages', exact: true }).click();
   await page.getByRole('button', { name: /Alder Point — Package requirements/ }).click();
   await page.getByRole('button', { name: /^Documents/ }).click();
   await page
@@ -109,7 +109,7 @@ try {
   const old = await existing.newPage();
   old.on('pageerror', (e) => errors.push(e.message));
   await old.goto(url);
-  await old.getByRole('button', { name: 'Packages', exact: true }).click();
+  await old.getByRole('button', { name: 'All packages', exact: true }).click();
   await old.getByRole('button', { name: 'Add demo packages', exact: true }).click();
   await old
     .getByRole('heading', { name: 'Willow Quay — Ready to hand off', exact: true })
